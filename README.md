@@ -1,10 +1,9 @@
 # deep-learning-challenge
 
 ## Neural Network Model Report
-1. Overview of the analysis
-   This analysis examines a dataset of organizations that have received funding from a nonprofit, Alphabet Soup, and whether or not their venture had success. We are applying deep learning methods to help Alphabet Soup determine which organizations are more likely to be successful, predicting the outcome before Alphabet Soup grants the funding. 
+1. **Overview of the analysis:** This analysis examines a dataset of organizations that have received funding from a nonprofit, Alphabet Soup, and whether or not their venture had success. We are applying deep learning methods to help Alphabet Soup determine which organizations are more likely to be successful, predicting the outcome before Alphabet Soup grants the funding. 
    
-3. Results: Using bulleted lists and images to support your answers, address the following questions:
+3. **Results:** Using bulleted lists and images to support your answers, address the following questions:
 - Data Preprocessing
   - What variable(s) are the target(s) for your model?
     - The target for this model is the column "IS_SUCCESSFUL", which identifies if the money was used effectively and the venture had success. 
@@ -19,7 +18,7 @@
     - I was not able to achieve target performance. 
   - What steps did you take in your attempts to increase model performance?
     - In optimization, I tried dropping an additional column ("SPECIAL_CONSIDERATIONS", "USE_CASE"), adding an "Other" bin for "ASK_AMT", increasing the number of hidden layers from two to three, and increasing the number of nodes from 5 to 10 and eventually to 16 for the first layer. The highest accuracy score came from using two hidden layers with nodes 16 and 10 respectively, both dropped columns, and more strict cutoffs for the classifications binning. This accuracy score was still only 73.0%.
-3. Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+3. **Summary:** Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
   Overall, the optimized model could predict the success of an organizations application for funding correctly 73% of the time. Although my optimization attempts were unsuccessful, I think that increasing nodes in conjunction with increasing the layers may have a good outcome due to the added complexity of the model. Further, improving the quality or amount of training data could also lead to a more accurate model.
 
 ## Sources
